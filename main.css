@@ -1,0 +1,16 @@
+.song-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #150941;;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .song-item:hover{
+    box-shadow: 10px 10px 5px grey;
+    width: 400px;
+    height: 300px;
+    
+    border-radius: 20px;
+    
+    background-color: white;
+  }
