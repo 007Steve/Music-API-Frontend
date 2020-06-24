@@ -1,11 +1,19 @@
-.song-container {
+
+body{
+    background-color:whitesmoke;
+}
+    #song-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: #150941;;
+    background-color: #000000;;
     padding: 10px;
     border-radius: 10px;
   }
-  .song-item:hover{
+  
+  .song-card{
+    
+  }
+  .song-card:hover{
     box-shadow: 10px 10px 5px grey;
     width: 400px;
     height: 300px;
@@ -14,3 +22,19 @@
     
     background-color: white;
   }
+  img {
+    width: 400px;
+    height: 300px;
+    margin: 0px;
+    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+}
+#texts{
+color: aliceblue;}
+.container{
+    background-color: #003232;
+    background-image: linear-gradient(0deg, #003232 0%, #2AF598 100%);
+    
+}

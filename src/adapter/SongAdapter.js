@@ -4,7 +4,6 @@ class SongAdapter {
     }
 
     getSong(){
-        return fetch(this.baseUrl)
-        .then(res => res.json())
+        return fetch('http://localhost:3000/songs').then(res => res.json())
     }
 }
