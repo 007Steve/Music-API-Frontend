@@ -12,13 +12,13 @@ class Song {
 
     songHTML(){
         return `
-        <img src="${this.image}"/>
+        <a><img src="${this.image}"/></a>
         <h2 id="texts">${this.artist}</h2>
         <h3 id="texts">${this.title}</h3>
         
         `
     }
-
+    
     renderSong(){
         const songContainer = document.getElementById('song-container')
         const songCard = document.createElement('div')
@@ -27,4 +27,8 @@ class Song {
         songCard.innerHTML += this.songHTML()
         songContainer.appendChild(songCard)
     }
+
+
 }
+
+
