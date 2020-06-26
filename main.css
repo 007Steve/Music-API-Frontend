@@ -44,8 +44,9 @@ background-image: linear-gradient(0deg, #00158b 0%, #2a70f5 100%);
 color: aliceblue;}
 
 .container{
-    background-color: #0f7d2c;
-    background-image: linear-gradient(0deg, #0f7d2c 0%, #2AF598 100%);
+  background-color: #08AEEA;
+  background-image: linear-gradient(0deg, #08AEEA 0%, #0055cd 100%);
+  
     width:500px ;
     height: 200px;
     position: relative;
@@ -58,6 +59,10 @@ color: aliceblue;}
 }
 h1{
   text-align: center;
+  background: -webkit-linear-gradient(rgb(240, 17, 17), rgba(250, 112, 0, 0.74));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 #ml{
    font-size: 45px;
@@ -67,4 +72,10 @@ h1{
 
 .welcome{
     background-color:black;
+}
+
+.delete{
+  background-color: #FFE53B;
+background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+border-radius: 10px;
 }
