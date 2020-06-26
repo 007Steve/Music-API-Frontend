@@ -11,8 +11,8 @@ class Song {
     }
 
 
-    deleteSong(){
-
+    deleteSong(e){
+        console.log('you click delete')
     }
 
 
@@ -21,7 +21,7 @@ class Song {
         <a><img src="${this.image}"/></a>
         <h2 id="texts">${this.artist}</h2>
         <h3 id="texts">${this.title}</h3>
-        <button data-id="${this.id}">Delete</button>
+        <button class="delete">Delete</button>
         `
     }
     
@@ -32,6 +32,12 @@ class Song {
         songCard.id = this.id
         songCard.innerHTML += this.songHTML()
         songContainer.appendChild(songCard)
+        songCard.addEventListener('click', e => {
+            if (e.target.className.includes('delete')) this.deleteSong(e)
+  
+                
+                
+        })
     }
 
 
