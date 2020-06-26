@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",function(){
 
 
     function addSong(e){
-       
+        e.preventDefault()
     
     
     
