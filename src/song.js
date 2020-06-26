@@ -16,7 +16,10 @@ class Song {
         fetch(`http://localhost:3000/songs/${id}`,{
             method: 'DELETE'
         })
-       
+        .then(() => {
+            document.getElementById('song-container').removeChild(document.getElementById(id))
+        })
+
     }
 
 
