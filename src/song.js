@@ -13,7 +13,9 @@ class Song {
 
     deleteSong(e){
         const id  = parseInt(e.target.parentElement.id)
-        
+        fetch(`http://localhost:3000/songs/${id}`,{
+            method: 'DELETE'
+        })
        
     }
 
