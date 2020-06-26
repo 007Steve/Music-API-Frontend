@@ -12,7 +12,9 @@ class Song {
 
 
     deleteSong(e){
-        console.log('you click delete')
+        const id  = parseInt(e.target.parentElement.id)
+        
+       
     }
 
 
