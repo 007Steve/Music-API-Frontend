@@ -42,16 +42,23 @@ background-image: linear-gradient(0deg, #00158b 0%, #2a70f5 100%);
 }
 #texts{
 color: aliceblue;}
+
 .container{
     background-color: #0f7d2c;
     background-image: linear-gradient(0deg, #0f7d2c 0%, #2AF598 100%);
     width:500px ;
-    height: 500px;
+    height: 200px;
     position: relative;
     left: 500px;
     border-radius: 10px;
 }
-
+#new-song-form{
+  position: relative;
+  left: 30%;
+}
+h1{
+  text-align: center;
+}
 #ml{
    font-size: 45px;
    text-align: center;
