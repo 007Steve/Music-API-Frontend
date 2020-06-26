@@ -10,12 +10,18 @@ class Song {
        this.renderSong()
     }
 
+
+    deleteSong(){
+
+    }
+
+
     songHTML(){
         return `
         <a><img src="${this.image}"/></a>
         <h2 id="texts">${this.artist}</h2>
         <h3 id="texts">${this.title}</h3>
-        
+        <button data-id="${this.id}">Delete</button>
         `
     }
     
