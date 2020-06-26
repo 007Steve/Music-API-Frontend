@@ -7,12 +7,32 @@ document.addEventListener("DOMContentLoaded",function(){
             new Song(id, artist, title, genre, mp3, image, album)
         })
     })   
-    });
+  
 
+    document.getElementById('new-song-form').addEventListener('submit',addSong) 
 
     function addSong(e){
         e.preventDefault()
+        debugger
+
+        let data = {
+            'id': e.target.id.value,
+            'artist':e.target.artist.value,
+            'title':e.target.title.value,
+            'genre': e.target.genre.value,
+            'mp3': e.target.mp3.value,
+            'image':  e.target.image.value,
+            'album':e.target.album.value
+        }
     
-    
+        fetch('http://localhost:3000/songs', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
     
     }
+
+});
