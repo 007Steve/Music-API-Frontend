@@ -13,16 +13,18 @@ document.addEventListener("DOMContentLoaded",function(){
 
     function addSong(e){
         e.preventDefault()
-        debugger
+        
 
         let data = {
+            
             'id': e.target.id.value,
             'artist':e.target.artist.value,
             'title':e.target.title.value,
             'genre': e.target.genre.value,
             'mp3': e.target.mp3.value,
-            'image':  e.target.image.value,
-            'album':e.target.album.value
+            'image': e.target.image.value,
+            'album':e.target.album.value,
+            
         }
     
         fetch('http://localhost:3000/songs', {
@@ -32,6 +34,12 @@ document.addEventListener("DOMContentLoaded",function(){
             },
             body: JSON.stringify(data) 
         })
+        .then(resp => resp.json())
+    .then(song => {
+        const { id, artist , title , genre, mp3 , image , album } = song
+        new Song(id, artist , title , genre, mp3 , image , album)
+        document.getElementById('new-song-form').reset()
+    })
     
     }
 
